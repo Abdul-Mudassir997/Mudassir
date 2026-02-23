@@ -1,0 +1,11 @@
+:root{
+  --primary_color:#000000;
+  --secondary_color:#FFFFFF;
+    --primary_bg_color:#FFFFFF;
+  --secondary_bg_color:#000000;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
