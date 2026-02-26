@@ -1,37 +1,72 @@
-:root{
-  --primary_color:#000000;
-  --secondary_color:#FFFFFF;
-    --primary_bg_color:#FFFFFF;
-  --secondary_bg_color:#000000;
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee&family=Crete+Round:ital@0;1&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans:wght@100..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Share+Tech&family=Varela+Round&display=swap');
+
+:root {
+  --secondary_color: rgba(255, 255, 255, 1);
+  --secondary_bg_color: #1e1e2f;
+  --active_color: rgba(0, 146, 255, 1);
 }
-body{
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
-  background-color: rgba(209, 209, 212, 1);
+  background-color: var(--secondary_bg_color);
 }
 
-.container{
-  height: 100vh;
-  width: 100%;
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+  transform-origin: bottom left;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--secondary_bg_color);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+
+
+.pages {
+  width: 100%;
+  background: var(--secondary_bg_color);
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.box{
-  transition: all 2s;
-  margin: 10px;
-  overflow: hidden;
-  background-color: rgba(209, 209, 212, 1);
-  border-radius: 10px;
-  box-shadow:  3px 3px 10px rgba(174, 174, 192, 1), -3px -3px 10px rgba(255, 255, 255, 1), -3px -3px 10px rgba(174, 174, 192, 1), -3px -3px 10px rgba(255, 255, 255, 1);
+.page {
+  width: 100%;
+  background-color: var(--secondary_bg_color);
+  color: var(--secondary_color);
 }
-.box img{
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  margin: 10px;
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons {
+  color: #FFFFFF;
+  font-size: 40px !important;
+}
+
+.calltoaction {
+  font-size: 25px;
+  font-family: "Space Grotesk";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(#FF00BD,#6400FF);
 }
