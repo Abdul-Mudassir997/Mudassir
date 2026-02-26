@@ -1,0 +1,55 @@
+.navbar {
+  padding: 0px 10px;
+  margin: 5px 20px;
+  position: sticky;
+  top: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FF00DB;
+  border-radius: 12px;
+  background-color: var(--secondary_bg_color);
+}
+
+.tabs {
+  font-family: "Crete Round", sans-serif;
+  font-weight: 800;
+  transition: all 0.2s;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 7px 3px;
+  margin: 10px 3px;
+  color: var(--secondary_color);
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary_bg_color);
+  
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tabs:hover {
+  color: var(--active_color);
+  font-size: 20px;
+}
+
+.visited_tab {
+  border: 2px solid #FF00DB;
+  color: var(--active_color);
+  font-size: 20px;
+  padding: 7px;
+  margin: 7px 5px;
+}
+
+.separator {
+  padding: 0px;
+  margin: 0px;
+  font-size: 28px;
+  color: rgba(127, 127, 127, 1);
+}
+
+.theme_btn{
+	margin: 10px;
+	color: var(--active_color);
+	-webkit-user-select: none;
+}
